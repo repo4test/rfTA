@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Execute Tests') {
             steps{
-                sh 'docker run -v ${PWD}/:/opt/robotframework/ interworks/rfrunner'
+                sh 'docker run -v ${PWD}/:/opt/robotframework/ repo4test/rfTA'
             }
         }
         stage('Proccess Results') {		
