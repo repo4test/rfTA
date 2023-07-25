@@ -1,0 +1,11 @@
+robotframework
+robotframework-appiumlibrary
+robotframework-browsermobproxylibrary
+robotframework-databaselibrary
+robotframework-imaplibrary
+robotframework-requests
+robotframework-seleniumlibrary
+robotframeworklexer==1.1
+cx-Oracle
+browsermob-proxy
+Appium-Python-Client==0.31
