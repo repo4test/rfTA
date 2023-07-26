@@ -19,10 +19,10 @@ RUN CHROMEDRIVER_VERSION=`wget --no-verbose --output-document - https://chromedr
     chmod +x /opt/chromedriver/chromedriver && \
     ln -fs /opt/chromedriver/chromedriver /usr/local/bin/chromedriver
 	
-ENTRYPOINT [‘/run_tests.sh’]
+ENTRYPOINT [‘./scripts/run_tests.sh’]
 
 robot --variable BROWSER:chrome --outputdir report tests
 
 docker build -t robotTA_image
 
-docker exec -it container_robotTA bash -c './run_tests.sh’
+docker exec -it container_robotTA bash -c './scripts/run_tests.sh’
