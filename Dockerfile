@@ -25,4 +25,4 @@ robot --variable BROWSER:chrome --outputdir report tests
 
 docker build -t robotTA_image
 
-docker exec -it container_robotTA bash -c './scripts/run_tests.sh’
+docker exec -it container_robotTA bash -c '/scripts/run_tests.sh’
